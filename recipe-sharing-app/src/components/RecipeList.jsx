@@ -3,15 +3,29 @@ import { useRecipeStore } from "./recipeStore";
 
 const RecipeList = () => {
   const recipes = useRecipeStore((state) => state.recipes);
+  const filteredRecipes = useRecipeStore((state) => state.filteredRecipes);
+  const searchTerm = useRecipeStore((state) => state.searchTerm);
+
+  // Display filtered recipes if there's a search term, otherwise show all recipes
+  const displayedRecipes = searchTerm ? filteredRecipes : recipes;
 
   return (
     <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
       <h2>Recipe Collection</h2>
-      {recipes.length === 0 ? (
-        <p>No recipes available. Add your first recipe above!</p>
+      {searchTerm && (
+        <p style={{ color: "#666", fontStyle: "italic" }}>
+          {filteredRecipes.length} recipe(s) found for "{searchTerm}"
+        </p>
+      )}
+      {displayedRecipes.length === 0 ? (
+        <p>
+          {searchTerm
+            ? "No recipes found matching your search."
+            : "No recipes available. Add your first recipe above!"}
+        </p>
       ) : (
         <div style={{ display: "grid", gap: "20px", marginTop: "20px" }}>
-          {recipes.map((recipe) => (
+          {displayedRecipes.map((recipe) => (
             <div
               key={recipe.id}
               style={{
