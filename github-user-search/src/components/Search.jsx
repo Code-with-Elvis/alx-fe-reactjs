@@ -18,7 +18,7 @@ const Search = () => {
       //console.log(response.data);
     } catch (err) {
       if (err.response && err.response.status === 404) {
-        setError("User not found");
+        setError("Looks like we cant find the user");
       } else {
         setError("An error occurred. Please try again.");
       }
