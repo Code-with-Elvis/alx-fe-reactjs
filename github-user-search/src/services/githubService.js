@@ -2,7 +2,13 @@ import axios from "axios";
 
 const GITHUB_API_KEY = import.meta.env.VITE_APP_GITHUB_API_KEY;
 
-function searchUsers({ username, location, minRepos, page = 1, perPage = 10 }) {
+function fetchUserData({
+  username,
+  location,
+  minRepos,
+  page = 1,
+  perPage = 10,
+}) {
   let query = "";
 
   if (username) query += `${username} in:login`;
@@ -20,4 +26,4 @@ function searchUsers({ username, location, minRepos, page = 1, perPage = 10 }) {
   );
 }
 
-export { searchUsers };
+export { fetchUserData };
