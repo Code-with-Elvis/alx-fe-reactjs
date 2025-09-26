@@ -92,12 +92,13 @@ const Search = () => {
         {error && <p className="error">{error}</p>}
 
         {!loading && !error && results.length > 0 && (
-          <div className="grid grid-cols-4 gap-5 mt-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-8">
             {results.map((user) => (
               <div key={user.id} className="result">
                 <img
                   src={user.avatar_url}
                   alt={user.login}
+                  loading="lazy"
                   className="w-full h-48 object-cover rounded"
                 />
                 <div className="info px-2 py-1 text-sm">
