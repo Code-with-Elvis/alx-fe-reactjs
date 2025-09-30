@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://picsum.photos/300/200?random=1"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "image": "https://picsum.photos/300/200?random=2"
+  },
+  {
+    "id": 3,
+    "title": "Vegetable Stir Fry",
+    "summary": "A quick and healthy mix of fresh vegetables sautéed in a savory sauce.",
+    "image": "https://picsum.photos/300/200?random=3"
+  },
+  {
+    "id": 4,
+    "title": "Beef Tacos",
+    "summary": "Seasoned ground beef served in crispy taco shells with fresh toppings.",
+    "image": "https://picsum.photos/300/200?random=4"
+  },
+  {
+    "id": 5,
+    "title": "Caesar Salad",
+    "summary": "Crisp romaine lettuce tossed with Caesar dressing, croutons, and Parmesan cheese.",
+    "image": "https://picsum.photos/300/200?random=5"
+  },
+  {
+    "id": 6,
+    "title": "Chocolate Chip Cookies",
+    "summary": "Classic cookies loaded with chocolate chips, perfect for any occasion.",
+    "image": "https://picsum.photos/300/200?random=6"
+  },
+  {
+    "id": 7,
+    "title": "Margherita Pizza",
+    "summary": "A simple yet delicious pizza topped with fresh tomatoes, mozzarella, and basil.",
+    "image": "https://picsum.photos/300/200?random=7"
+  },
+  {
+    "id": 8,
+    "title": "Lemon Garlic Shrimp",
+    "summary": "Juicy shrimp cooked in a zesty lemon garlic sauce, served over rice or pasta.",
+    "image": "https://picsum.photos/300/200?random=8"
+  },
+  {
+    "id": 9,
+    "title": "Pancakes with Maple Syrup",
+    "summary": "Fluffy pancakes served with a drizzle of pure maple syrup and fresh berries.",
+    "image": "https://picsum.photos/300/200?random=9"
+  },
+  {
+    "id": 10,
+    "title": "Greek Yogurt Parfait",
+    "summary": "Layers of creamy Greek yogurt, fresh fruit, and granola for a healthy breakfast or snack.",
+    "image": "https://picsum.photos/300/200?random=10"
+  },
+  {
+    "id": 11,
+    "title": "Avocado Toast",
+    "summary": "Toasted bread topped with mashed avocado, a sprinkle of salt, and a dash of chili flakes.",
+    "image": "https://picsum.photos/300/200?random=11"
+  },
+  {
+    "id": 12,
+    "title": "Minestrone Soup",
+    "summary": "A hearty Italian vegetable soup with beans, pasta, and a rich tomato broth.",
+    "image": "https://picsum.photos/300/200?random=12"
+  }
+]
