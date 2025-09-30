@@ -14,17 +14,16 @@ const AddRecipeForm = () => {
 
   // Handle input changes
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [e.target.name]: e.target.value,
     }));
 
     // Clear error when user starts typing
-    if (errors[name]) {
+    if (errors[e.target.name]) {
       setErrors((prev) => ({
         ...prev,
-        [name]: "",
+        [e.target.name]: "",
       }));
     }
   };
@@ -33,12 +32,10 @@ const AddRecipeForm = () => {
   const validateForm = () => {
     const newErrors = {};
 
-    // Check if title is empty
     if (!formData.title.trim()) {
       newErrors.title = "Recipe title is required";
     }
 
-    // Check if ingredients is empty and contains at least 2 items
     if (!formData.ingredients.trim()) {
       newErrors.ingredients = "Ingredients are required";
     } else {
@@ -50,7 +47,6 @@ const AddRecipeForm = () => {
       }
     }
 
-    // Check if preparation steps is empty
     if (!formData.steps.trim()) {
       newErrors.steps = "Preparation steps are required";
     }
@@ -66,9 +62,8 @@ const AddRecipeForm = () => {
     setSubmitSuccess(false);
 
     if (validateForm()) {
-      // Simulate form submission (replace with actual API call)
       try {
-        await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate API delay
+        await new Promise((resolve) => setTimeout(resolve, 1000));
 
         console.log("Recipe submitted:", {
           title: formData.title,
@@ -82,11 +77,9 @@ const AddRecipeForm = () => {
             .map((step) => step.trim()),
         });
 
-        // Reset form on success
         setFormData({ title: "", ingredients: "", steps: "" });
         setSubmitSuccess(true);
 
-        // Hide success message after 3 seconds
         setTimeout(() => setSubmitSuccess(false), 3000);
       } catch (error) {
         console.error("Error submitting recipe:", error);
