@@ -21,9 +21,35 @@ const HomePage = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
-        Recipe Sharing Platform
-      </h1>
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold mb-4 text-gray-800">
+          Recipe Sharing Platform
+        </h1>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <p className="text-lg text-gray-600">
+            Discover and share amazing recipes with our community
+          </p>
+          <Link
+            to="/add-recipe"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center font-semibold shadow-lg hover:shadow-xl"
+          >
+            <svg
+              className="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+            Add Recipe
+          </Link>
+        </div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {recipes.map((recipe) => (
