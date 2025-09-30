@@ -3,72 +3,307 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://picsum.photos/300/200?random=1"
+    "image": "https://picsum.photos/300/200?random=1",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta or bacon",
+      "2 large eggs",
+      "50g Pecorino cheese, grated",
+      "50g Parmesan cheese, grated",
+      "2 cloves garlic, peeled",
+      "Salt and black pepper to taste",
+      "Fresh parsley, chopped (optional)"
+    ],
+    "cooking_instructions": [
+      "Cook the spaghetti in a large pot of boiling salted water until al dente. Reserve some pasta water and then drain the pasta.",
+      "In a pan, cook the pancetta or bacon until crispy. Add the garlic cloves for flavor, then remove them before adding the pasta.",
+      "In a bowl, beat the eggs and mix in the grated Pecorino and Parmesan cheese. Season with a little black pepper.",
+      "Add the hot pasta to the pan with pancetta and toss to combine. Remove from heat and quickly pour in the egg and cheese mixture, stirring vigorously to create a creamy sauce. If needed, add a little reserved pasta water to loosen the sauce.",
+      "Serve immediately, garnished with extra cheese and chopped parsley if desired."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://picsum.photos/300/200?random=2"
+    "image": "https://picsum.photos/300/200?random=2",
+    "ingredients": [
+      "500g boneless chicken, cut into cubes",
+      "1 cup yogurt",
+      "2 tbsp lemon juice",
+      "2 tsp ground cumin",
+      "2 tsp ground coriander",
+      "1 tsp turmeric",
+      "1 tsp garam masala",
+      "1 tsp chili powder",
+      "2 tbsp vegetable oil",
+      "1 large onion, finely chopped",
+      "3 cloves garlic, minced",
+      "1 tbsp ginger, minced",
+      "400g canned tomatoes",
+      "1 cup heavy cream",
+      "Salt to taste",
+      "Fresh cilantro, chopped (for garnish)"
+    ],
+    "cooking_instructions": [
+      "In a bowl, combine yogurt, lemon juice, cumin, coriander, turmeric, garam masala, and chili powder. Add chicken cubes and marinate for at least 1 hour or overnight in the refrigerator.",
+      "Preheat a grill or oven to medium-high heat. Thread the chicken onto skewers and grill until cooked through and slightly charred. Set aside.",
+      "In a large pan, heat oil over medium heat. Add chopped onions and sauté until golden brown. Add garlic and ginger, cooking for another minute.",
+      "Add canned tomatoes and cook until the oil starts to separate from the mixture. Stir in heavy cream and simmer for 10 minutes.",
+      "Add the grilled chicken pieces to the sauce and cook for another 5-10 minutes until heated through. Season with salt to taste.",
+      "Garnish with fresh cilantro and serve with rice or naan bread."
+    ]
   },
   {
     "id": 3,
     "title": "Vegetable Stir Fry",
     "summary": "A quick and healthy mix of fresh vegetables sautéed in a savory sauce.",
-    "image": "https://picsum.photos/300/200?random=3"
+    "image": "https://picsum.photos/300/200?random=3",
+    "ingredients": [
+      "2 tbsp vegetable oil",
+      "1 red bell pepper, sliced",
+      "1 yellow bell pepper, sliced",
+      "1 broccoli head, cut into florets",
+      "1 carrot, julienned",
+      "1 zucchini, sliced",
+      "2 cloves garlic, minced",
+      "1 tbsp ginger, minced",
+      "3 tbsp soy sauce",
+      "1 tbsp oyster sauce (optional)",
+      "1 tsp sesame oil",
+      "Salt and pepper to taste",
+      "Sesame seeds (for garnish)",
+      "Cooked rice or noodles (for serving)"
+    ],
+    "cooking_instructions": [
+      "Heat vegetable oil in a large wok or skillet over medium-high heat. Add garlic and ginger, sautéing for about 30 seconds until fragrant.",
+      "Add the bell peppers, broccoli, carrot, and zucchini to the pan. Stir-fry for 5-7 minutes until the vegetables are tender-crisp.",
+      "In a small bowl, mix soy sauce, oyster sauce (if using), and sesame oil. Pour the sauce over the vegetables and toss to coat evenly.",
+      "Cook for another 2-3 minutes until the sauce is heated through. Season with salt and pepper to taste.",
+      "Garnish with sesame seeds and serve immediately over cooked rice or noodles."
+    ]
   },
   {
     "id": 4,
     "title": "Beef Tacos",
     "summary": "Seasoned ground beef served in crispy taco shells with fresh toppings.",
-    "image": "https://picsum.photos/300/200?random=4"
+    "image": "https://picsum.photos/300/200?random=4",
+    "ingredients": [
+      "500g ground beef",
+      "1 small onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1 tbsp chili powder",
+      "1 tsp ground cumin",
+      "1 tsp paprika",
+      "1/2 tsp oregano",
+      "Salt and pepper to taste",
+      "8 taco shells or small tortillas",
+      "1 cup shredded lettuce",
+      "1 cup diced tomatoes",
+      "1/2 cup shredded cheese (cheddar or Mexican blend)",
+      "1/4 cup sour cream",
+      "1/4 cup salsa",
+      "Fresh cilantro, chopped (for garnish)"
+    ],
+    "cooking_instructions": [
+      "In a large skillet, cook the ground beef over medium heat until browned. Drain any excess fat.",
+      "Add chopped onion and garlic to the skillet, cooking until softened.",
+      "Stir in chili powder, cumin, paprika, oregano, salt, and pepper. Cook for another 2-3 minutes to allow the flavors to meld.",
+      "Warm the taco shells or tortillas according to package instructions.",
+      "Fill each taco shell with a portion of the seasoned beef mixture. Top with shredded lettuce, diced tomatoes, cheese, sour cream, and salsa.",
+      "Garnish with fresh cilantro and serve immediately."
+    ]
   },
   {
     "id": 5,
     "title": "Caesar Salad",
     "summary": "Crisp romaine lettuce tossed with Caesar dressing, croutons, and Parmesan cheese.",
-    "image": "https://picsum.photos/300/200?random=5"
+    "image": "https://picsum.photos/300/200?random=5",
+    "ingredients": [
+      "1 large head romaine lettuce, chopped",
+      "1/2 cup Caesar dressing",
+      "1 cup croutons",
+      "1/4 cup grated Parmesan cheese",
+      "1 lemon, cut into wedges (for serving)",
+      "Salt and pepper to taste"
+    ],
+    "cooking_instructions": [
+      "In a large salad bowl, combine the chopped romaine lettuce and Caesar dressing. Toss to coat the lettuce evenly.",
+      "Add croutons and grated Parmesan cheese to the salad. Toss gently to combine.",
+      "Season with salt and pepper to taste.",
+      "Serve immediately with lemon wedges on the side for extra flavor."
+    ]
   },
   {
     "id": 6,
     "title": "Chocolate Chip Cookies",
     "summary": "Classic cookies loaded with chocolate chips, perfect for any occasion.",
-    "image": "https://picsum.photos/300/200?random=6"
+    "image": "https://picsum.photos/300/200?random=6",
+    "ingredients": [
+      "1 cup unsalted butter, softened",
+      "1 cup granulated sugar",
+      "1 cup brown sugar, packed",
+      "2 large eggs",
+      "2 tsp vanilla extract",
+      "3 cups all-purpose flour",
+      "1 tsp baking soda",
+      "1/2 tsp salt",
+      "2 cups chocolate chips"
+    ],
+    "cooking_instructions": [
+      "Preheat the oven to 350°F (175°C). Line baking sheets with parchment paper.",
+      "In a large bowl, cream together the softened butter, granulated sugar, and brown sugar until light and fluffy.",
+      "Beat in the eggs one at a time, then stir in the vanilla extract.",
+      "In a separate bowl, whisk together the flour, baking soda, and salt. Gradually add the dry ingredients to the wet ingredients, mixing until just combined.",
+      "Fold in the chocolate chips.",
+      "Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 2 inches apart.",
+      "Bake for 10-12 minutes or until the edges are golden brown. Allow cookies to cool on the baking sheet for a few minutes before transferring to a wire rack to cool completely."
+    ]
   },
   {
     "id": 7,
     "title": "Margherita Pizza",
     "summary": "A simple yet delicious pizza topped with fresh tomatoes, mozzarella, and basil.",
-    "image": "https://picsum.photos/300/200?random=7"
+    "image": "https://picsum.photos/300/200?random=7",
+    "ingredients": [
+      "1 pizza dough (store-bought or homemade)",
+      "1/2 cup tomato sauce",
+      "200g fresh mozzarella cheese, sliced",
+      "2-3 fresh tomatoes, sliced",
+      "Fresh basil leaves",
+      "2 tbsp olive oil",
+      "Salt and pepper to taste",
+      "Flour (for dusting)"
+    ],
+    "cooking_instructions": [
+      "Preheat the oven to 475°F (245°C). If using a pizza stone, place it in the oven to heat up.",
+      "On a floured surface, roll out the pizza dough to your desired thickness. Transfer it to a piece of parchment paper for easy handling.",
+      "Spread the tomato sauce evenly over the dough, leaving a small border around the edges.",
+      "Arrange the sliced mozzarella and tomatoes on top of the sauce. Season with salt and pepper.",
+      "Drizzle olive oil over the pizza and add fresh basil leaves.",
+      "Transfer the pizza (with parchment paper) onto the preheated pizza stone or a baking sheet. Bake for 10-12 minutes or until the crust is golden and the cheese is bubbly and slightly browned.",
+      "Remove from the oven and let it cool for a few minutes before slicing and serving."
+    ]
   },
   {
     "id": 8,
     "title": "Lemon Garlic Shrimp",
     "summary": "Juicy shrimp cooked in a zesty lemon garlic sauce, served over rice or pasta.",
-    "image": "https://picsum.photos/300/200?random=8"
+    "image": "https://picsum.photos/300/200?random=8",
+    "ingredients": [
+      "500g large shrimp, peeled and deveined",
+      "3 tbsp olive oil",
+      "4 cloves garlic, minced",
+      "1 lemon, juiced and zested",
+      "1/4 cup fresh parsley, chopped",
+      "Salt and pepper to taste",
+      "Cooked rice or pasta (for serving)"
+    ],
+    "cooking_instructions": [
+      "In a large skillet, heat olive oil over medium heat. Add minced garlic and sauté for about 1 minute until fragrant.",
+      "Add the shrimp to the skillet in a single layer. Cook for 2-3 minutes on each side until they turn pink and opaque.",
+      "Stir in lemon juice, lemon zest, and chopped parsley. Season with salt and pepper to taste.",
+      "Cook for another minute to allow the flavors to meld together.",
+      "Serve the lemon garlic shrimp over cooked rice or pasta, garnished with extra parsley if desired."
+    ]
   },
   {
     "id": 9,
     "title": "Pancakes with Maple Syrup",
     "summary": "Fluffy pancakes served with a drizzle of pure maple syrup and fresh berries.",
-    "image": "https://picsum.photos/300/200?random=9"
+    "image": "https://picsum.photos/300/200?random=9",
+    "ingredients": [
+      "1 1/2 cups all-purpose flour",
+      "3 1/2 tsp baking powder",
+      "1 tsp salt",
+      "1 tbsp sugar",
+      "1 1/4 cups milk",
+      "1 egg",
+      "3 tbsp melted butter",
+      "Maple syrup (for serving)",
+      "Fresh berries (for garnish)"
+    ],
+    "cooking_instructions": [
+      "In a large bowl, sift together the flour, baking powder, salt, and sugar.",
+      "Make a well in the center and pour in the milk, egg, and melted butter. Mix until smooth.",
+      "Heat a lightly oiled griddle or frying pan over medium-high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake.",
+      "Cook until bubbles form on the surface of the pancakes and the edges are dry. Flip and cook until browned on the other side.",
+      "Serve hot with a drizzle of maple syrup and fresh berries on top."
+    ]
   },
   {
     "id": 10,
     "title": "Greek Yogurt Parfait",
     "summary": "Layers of creamy Greek yogurt, fresh fruit, and granola for a healthy breakfast or snack.",
-    "image": "https://picsum.photos/300/200?random=10"
+    "image": "https://picsum.photos/300/200?random=10",
+    "ingredients": [
+      "2 cups Greek yogurt",
+      "1 cup granola",
+      "1 cup mixed fresh berries (strawberries, blueberries, raspberries)",
+      "2 tbsp honey (optional)",
+      "Fresh mint leaves (for garnish)"
+    ],
+    "cooking_instructions": [
+      "In serving glasses or bowls, start by adding a layer of Greek yogurt.",
+      "Add a layer of mixed fresh berries on top of the yogurt.",
+      "Sprinkle a layer of granola over the berries.",
+      "Repeat the layers until the glasses are filled, finishing with a layer of granola on top.",
+      "Drizzle honey over the parfaits if desired.",
+      "Garnish with fresh mint leaves and serve immediately."
+    ]
   },
   {
     "id": 11,
     "title": "Avocado Toast",
     "summary": "Toasted bread topped with mashed avocado, a sprinkle of salt, and a dash of chili flakes.",
-    "image": "https://picsum.photos/300/200?random=11"
+    "image": "https://picsum.photos/300/200?random=11",
+    "ingredients": [
+      "2 slices of bread (whole grain or sourdough)",
+      "1 ripe avocado",
+      "1 tbsp lemon juice",
+      "Salt to taste",
+      "Chili flakes (optional)",
+      "Fresh herbs (like cilantro or parsley, for garnish)"
+    ],
+    "cooking_instructions": [
+      "Toast the bread slices to your desired level of crispiness.",
+      "In a bowl, mash the ripe avocado with lemon juice and salt until smooth but still slightly chunky.",
+      "Spread the mashed avocado evenly over the toasted bread slices.",
+      "Sprinkle chili flakes on top if you like a bit of heat.",
+      "Garnish with fresh herbs and serve immediately."
+    ]
   },
   {
     "id": 12,
     "title": "Minestrone Soup",
     "summary": "A hearty Italian vegetable soup with beans, pasta, and a rich tomato broth.",
-    "image": "https://picsum.photos/300/200?random=12"
+    "image": "https://picsum.photos/300/200?random=12",
+    "ingredients": [
+      "2 tbsp olive oil",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "2 carrots, diced",
+      "2 celery stalks, diced",
+      "1 zucchini, diced",
+      "1 cup green beans, chopped",
+      "1 can (400g) diced tomatoes",
+      "4 cups vegetable broth",
+      "1 can (400g) cannellini beans, drained and rinsed",
+      "1 cup small pasta (like ditalini or elbow macaroni)",
+      "1 tsp dried oregano",
+      "1 tsp dried basil",
+      "Salt and pepper to taste",
+      "Fresh parsley, chopped (for garnish)"
+    ],
+    "cooking_instructions": [
+      "In a large pot, heat olive oil over medium heat. Add chopped onion and garlic, sautéing until softened.",
+      "Add diced carrots and celery, cooking for another 5 minutes until they begin to soften.",
+      "Stir in zucchini and green beans, cooking for an additional 3 minutes.",
+      "Add the diced tomatoes (with juice) and vegetable broth to the pot. Bring to a boil.",
+      "Reduce heat and simmer for 15 minutes until the vegetables are tender.",
+      "Stir in the cannellini beans, pasta, dried oregano, and dried basil. Cook until the pasta is al dente, about 8-10 minutes.",
+      "Season with salt and pepper to taste.",
+      "Serve hot, garnished with fresh parsley."
+    ]
   }
 ]
