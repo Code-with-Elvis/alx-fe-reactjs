@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+  --font-titillium: "Titillium Web", sans-serif;
+  --font-pacifico: "Pacifico", cursive;
+  --color-bg: #242424;
+  --color-text: #ffffff;
+  --text-primary: #646cff;
+  --error-color: #ff6f91;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-titillium);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  color: var(--color-text);
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em;
+}
+.registration-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+}
+.registration-form h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  font-family: var(--font-pacifico);
+}
+.form-group {
+  margin-bottom: 12px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 1px;
+  margin-left: 4px;
+  font-size: 14px;
+}
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid #ccc;
+  color: var(--color-text);
+}
+
+.form-group input:focus {
+  border-color: var(--text-primary);
+  outline: none;
+}
+.form-group input.error {
+  border-color: var(--error-color);
+}
+
+.form-group p.error {
+  color: var(--error-color);
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left: 6px;
+}
+.registration-form footer {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.registration-form button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 14px;
+  width: 100px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--text-primary);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1em 0.5em;
+  }
+}
