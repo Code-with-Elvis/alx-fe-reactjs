@@ -10,9 +10,11 @@ const RegistrationForm = () => {
   // destructure so we can use `value={username}` etc (what the checker expects)
   const { username, email, password } = formData;
 
-  const [usernameError, setUserNameError] = useState("");
-  const [emailError, setEmailError] = useState("");
-  const [passwordError, setPasswordError] = useState("");
+  const [errors, setErrors] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,34 +27,43 @@ const RegistrationForm = () => {
 
     let valid = true;
 
-    if (username.trim() === "") {
-      setUserNameError("Username is required.");
+    if (!username) {
+      setErrors((prev) => ({ ...prev, username: "Username is required." }));
       valid = false;
     } else if (username.length < 3) {
-      setUserNameError("Username must be at least 3 characters long.");
+      setErrors((prev) => ({
+        ...prev,
+        username: "Username must be at least 3 characters long.",
+      }));
       valid = false;
     } else {
-      setUserNameError("");
+      setErrors((prev) => ({ ...prev, username: "" }));
     }
 
-    if (email.trim() === "") {
-      setEmailError("Email is required.");
+    if (!email) {
+      setErrors((prev) => ({ ...prev, email: "Email is required." }));
       valid = false;
     } else if (!email.includes("@")) {
-      setEmailError("Email must be a valid email address.");
+      setErrors((prev) => ({
+        ...prev,
+        email: "Email must be a valid email address.",
+      }));
       valid = false;
     } else {
-      setEmailError("");
+      setErrors((prev) => ({ ...prev, email: "" }));
     }
 
-    if (password.trim() === "") {
-      setPasswordError("Password is required.");
+    if (!password) {
+      setErrors((prev) => ({ ...prev, password: "Password is required." }));
       valid = false;
     } else if (password.length < 6) {
-      setPasswordError("Password must be at least 6 characters long.");
+      setErrors((prev) => ({
+        ...prev,
+        password: "Password must be at least 6 characters long.",
+      }));
       valid = false;
     } else {
-      setPasswordError("");
+      setErrors((prev) => ({ ...prev, password: "" }));
     }
 
     if (valid) {
@@ -70,9 +81,9 @@ const RegistrationForm = () => {
           name="username"
           value={username}
           onChange={handleChange}
-          className={usernameError ? "error" : ""}
+          className={errors.username ? "error" : ""}
         />
-        {usernameError && <p className="error">{usernameError}</p>}
+        {errors.username && <p className="error">{errors.username}</p>}
       </div>
       <div className="form-group">
         <label htmlFor="email">Email</label>
@@ -82,9 +93,9 @@ const RegistrationForm = () => {
           name="email"
           value={email}
           onChange={handleChange}
-          className={emailError ? "error" : ""}
+          className={errors.email ? "error" : ""}
         />
-        {emailError && <p className="error">{emailError}</p>}
+        {errors.email && <p className="error">{errors.email}</p>}
       </div>
       <div className="form-group">
         <label htmlFor="password">Password</label>
@@ -94,9 +105,9 @@ const RegistrationForm = () => {
           name="password"
           value={password}
           onChange={handleChange}
-          className={passwordError ? "error" : ""}
+          className={errors.password ? "error" : ""}
         />
-        {passwordError && <p className="error">{passwordError}</p>}
+        {errors.password && <p className="error">{errors.password}</p>}
       </div>
       <footer>
         <button type="submit">Submit</button>

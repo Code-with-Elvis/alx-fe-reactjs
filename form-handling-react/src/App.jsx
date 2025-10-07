@@ -5,7 +5,8 @@ const App = () => {
   return (
     <section>
       <div className="container">
-        {/* <RegistrationForm /> */}
+        <RegistrationForm />
+        <div className="divider"></div>
         <FormikForm />
       </div>
     </section>
