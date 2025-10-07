@@ -22,10 +22,7 @@ const App = () => {
           <Route path="/user/:userId/posts/:postId" element={<BlogPost />} />
 
           {/* Profile routes with nested routing */}
-          <Route path="/profile" element={<Profile />}>
-            <Route path="details" element={<ProfileDetails />} />
-            <Route path="settings" element={<ProfileSettings />} />
-          </Route>
+          <Route path="/profile/*" element={<Profile />} />
 
           {/* Catch-all route for 404 */}
           <Route
