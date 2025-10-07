@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+  --font-titillium: "Titillium Web", sans-serif;
+  --font-pacifico: "Pacifico", cursive;
+  --color-bg: #242424;
+  --color-text: #ffffff;
+  --text-primary: #646cff;
+  --error-color: #ff6f91;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-titillium);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  color: var(--color-text);
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+h1 {
+  font-family: var(--font-pacifico);
+  text-align: center;
+  margin-bottom: 1em;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+.posts .post {
+  background-color: #333;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}
+.posts .post h2 {
+  margin-bottom: 10px;
+}
+.posts .post h2:first-letter {
+  text-transform: uppercase;
+}
+.posts .post p {
+  line-height: 1.6;
+  color: #ccc;
+}
+.loading,
+.error {
+  text-align: center;
+  margin-top: 2em;
+}
+.error {
+  color: var(--error-color);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 14px;
+  width: 100px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--text-primary);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+  margin-bottom: 1em;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
