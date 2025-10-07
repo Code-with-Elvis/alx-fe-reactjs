@@ -1,13 +1,27 @@
-import { Link, NavLink, Routes, Route } from "react-router-dom";
+import { Link, NavLink, Routes, Route, useNavigate } from "react-router-dom";
 import ProfileDetails from "./ProfileDetails";
 import ProfileSettings from "./ProfileSettings";
 
 const Profile = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem("authToken");
+    localStorage.removeItem("user");
+    navigate("/login");
+  };
+
+  // Get user data from localStorage
+  const user = JSON.parse(localStorage.getItem("user") || "{}");
+
   return (
     <div className="profile-page">
       <div className="container">
         <header>
           <Link to="/">← Back to Home</Link>
+          <button onClick={handleLogout} className="logout-button">
+            Logout
+          </button>
         </header>
         <h1>User Profile</h1>
         <p>Welcome to your profile page!</p>
@@ -21,13 +35,6 @@ const Profile = () => {
             </li>
           </ul>
         </nav>
-
-        <div>
-          <h3>Quick Profile Overview</h3>
-          <p>Name: John Doe</p>
-          <p>Email: john.doe@example.com</p>
-          <p>Member since: January 2024</p>
-        </div>
       </div>
 
       {/* Internal routing for profile sub-sections */}
