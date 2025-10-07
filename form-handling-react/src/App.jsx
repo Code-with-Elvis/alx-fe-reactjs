@@ -1,4 +1,3 @@
-import FormikForm from "./components/FormikForm";
 import RegistrationForm from "./components/RegistrationForm";
 
 const App = () => {
@@ -7,7 +6,8 @@ const App = () => {
       <div className="container">
         <RegistrationForm />
         <div className="divider"></div>
-        <FormikForm />
+
+        <div className="divider"></div>
       </div>
     </section>
   );
