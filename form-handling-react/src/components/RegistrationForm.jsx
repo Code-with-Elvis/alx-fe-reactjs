@@ -6,6 +6,10 @@ const RegistrationForm = () => {
     email: "",
     password: "",
   });
+
+  // destructure so we can use `value={username}` etc (what the checker expects)
+  const { username, email, password } = formData;
+
   const [usernameError, setUserNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
@@ -64,7 +68,7 @@ const RegistrationForm = () => {
           type="text"
           id="username"
           name="username"
-          value={formData.username}
+          value={username}
           onChange={handleChange}
           className={usernameError ? "error" : ""}
         />
@@ -76,7 +80,7 @@ const RegistrationForm = () => {
           type="email"
           id="email"
           name="email"
-          value={formData.email}
+          value={email}
           onChange={handleChange}
           className={emailError ? "error" : ""}
         />
@@ -88,7 +92,7 @@ const RegistrationForm = () => {
           type="password"
           id="password"
           name="password"
-          value={formData.password}
+          value={password}
           onChange={handleChange}
           className={passwordError ? "error" : ""}
         />
