@@ -2,18 +2,12 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 const FormikForm = () => {
-  // Define the validation schema using Yup
+  // prettier-ignore
   const validationSchema = Yup.object({
-    username: Yup.string()
-      .required("Username is required.")
-      .min(3, "Username must be at least 3 characters long."),
-    email: Yup.string()
-      .required("Email is required.")
-      .email("Email must be a valid email address."),
-    password: Yup.string()
-      .required("Password is required.")
-      .min(6, "Password must be at least 6 characters long."),
-  });
+  username: Yup.string().required("Username is required.").min(3, "Username must be at least 3 characters long."),
+  email: Yup.string().required("Email is required.").email("Email must be a valid email address."),
+  password: Yup.string().required("Password is required.").min(6, "Password must be at least 6 characters long."),
+});
 
   // Handle form submission
   const handleSubmit = (values, { setSubmitting }) => {
