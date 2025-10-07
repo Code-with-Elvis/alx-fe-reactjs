@@ -10,10 +10,13 @@
   --success-color: #28a745;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 body {
   font-family: var(--font-titillium);
@@ -27,12 +30,17 @@ body {
   padding: 2em;
 }
 
+@media (max-width: 600px) {
+  .container {
+    padding: 1em;
+  }
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 14px;
-  width: 100px;
   font-weight: 500;
   font-family: inherit;
   background-color: var(--text-primary);
@@ -47,4 +55,295 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* ====== Home Page ===== */
+.home h1 {
+  font-family: var(--font-pacifico);
+  font-size: 24px;
+  margin-bottom: 2em;
+}
+.home nav {
+  margin-bottom: 2em;
+}
+.home nav ul {
+  list-style: none;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.home nav ul li {
+  border: 1px solid var(--text-primary);
+  padding: 1em;
+  border-radius: 8px;
+  background-color: rgba(100, 108, 255, 0.1);
+  transition: background-color 0.25s;
+}
+.home nav ul li:hover {
+  background-color: rgba(100, 108, 255, 0.2);
+}
+.home nav ul li a {
+  color: var(--text-primary);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: transform 0.25s;
+}
+.home nav ul li a:hover {
+  transform: translateX(6px);
+}
+.home nav ul li a span {
+  font-size: 12px;
+}
+.home p {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
+
+/* ====== Profile Page ===== */
+
+.profile-page header a {
+  color: var(--text-primary);
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 600;
+}
+.profile-page header a:hover {
+  color: #454ed1;
+}
+.profile-page h1 {
+  font-family: var(--font-pacifico);
+  font-size: 24px;
+  margin: 1em 0 1em 0;
+}
+.profile-page p {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
+.profile-page nav {
+  margin: 1em 0 0em 0;
+}
+.profile-page nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+.profile-page nav ul li a {
+  color: var(--text-primary);
+  padding: 0.4em 0.8em;
+  border: 1px solid var(--text-primary);
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.25s, color 0.25s;
+}
+.profile-page nav ul li a:hover {
+  background-color: rgba(100, 108, 255, 0.1);
+}
+/* use NavLink for this to work */
+.profile-page nav ul li a.active {
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+/* ====== Profile Details ===== */
+.profile-details h2 {
+  font-family: var(--font-pacifico);
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+.profile-details .container {
+  padding-top: 0;
+}
+.profile-details h3 {
+  margin-bottom: 1em;
+}
+.profile-details p {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+  font-size: 14px;
+}
+.profile-details a {
+  color: var(--text-primary);
+  font-size: 14px;
+  border: 1px solid var(--text-primary);
+  padding: 0.4em 0.8em;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.profile-details a:hover {
+  background-color: rgba(100, 108, 255, 0.1);
+}
+
+/* ====== Profile Settings ===== */
+.profile-settings .container {
+  padding-top: 0;
+}
+.profile-settings h2 {
+  font-family: var(--font-pacifico);
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+.profile-settings form {
+  max-width: 400px;
+}
+.profile-settings .form-group {
+  margin-bottom: 12px;
+}
+.profile-settings .form-group label {
+  display: block;
+  margin-bottom: 1px;
+  margin-left: 4px;
+  font-size: 14px;
+}
+.profile-settings .form-group input,
+.profile-settings .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid #ccc;
+  color: var(--color-text);
+}
+.profile-settings .form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.profile-settings .form-group input:focus {
+  border-color: var(--text-primary);
+  outline: none;
+}
+.profile-settings .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile-settings .checkbox-group label {
+  margin: 0;
+  display: block;
+  width: 200px;
+}
+.profile-settings .checkbox-group input {
+  width: auto;
+  transform: scale(1.4);
+  cursor: pointer;
+  accent-color: var(--success-color);
+}
+.profile-settings button {
+  margin-top: 1.5em;
+}
+.profile-settings a {
+  color: var(--text-primary);
+  font-size: 14px;
+  border: 1px solid var(--text-primary);
+  padding: 0.4em 0.8em;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.25s, color 0.25s;
+}
+.profile-settings a:hover {
+  background-color: rgba(100, 108, 255, 0.1);
+}
+
+/* ====== Blogs Page ===== */
+.blogs-page header a {
+  color: var(--text-primary);
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.blogs-page header a:hover {
+  color: #454ed1;
+}
+.blogs-page h1 {
+  font-family: var(--font-pacifico);
+  font-size: 24px;
+  margin: 1em 0 1em 0;
+}
+.blogs-page h2 {
+  font-family: var(--font-pacifico);
+  font-size: 18px;
+  margin: 1em 0 1em 0;
+}
+.blogs-page .blog-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+}
+.blogs-page .blog-list li {
+  border: 1px solid var(--text-primary);
+  padding: 1em;
+  border-radius: 8px;
+
+  background-color: rgba(100, 108, 255, 0.1);
+  transition: background-color 0.25s;
+}
+.blogs-page .blog-list li:hover {
+  background-color: rgba(100, 108, 255, 0.2);
+}
+.blogs-page .blog-list li a {
+  color: var(--text-primary);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5em;
+  transition: text-decoration 0.25s;
+}
+.blogs-page .blog-list li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .blogs-page .blog-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ====== Blog Post Page ===== */
+.blog-post-page header a {
+  color: var(--text-primary);
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 600;
+}
+.blog-post-page header a:hover {
+  color: #454ed1;
+}
+.blog-post-page h1 {
+  font-family: var(--font-pacifico);
+  font-size: 24px;
+  margin: 1em 0 1em 0;
+}
+.blog-post-page p {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.blog-post-page .blog-content h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 18px;
+  font-family: var(--font-pacifico);
+}
+.blog-post-page .blog-content p {
+  margin-bottom: 1em;
+  font-size: 16px;
+}
+.blog-post-page .url-parameters {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(240, 240, 240, 0.1);
+  border-radius: 8px;
+}
+.blog-post-page .url-parameters h4 {
+  margin-bottom: 0.5em;
+}
+.blog-post-page .url-parameters p {
+  margin: 0.2em 0;
 }
