@@ -64,6 +64,7 @@ const RegistrationForm = () => {
           type="text"
           id="username"
           name="username"
+          value={formData.username}
           onChange={handleChange}
           className={usernameError ? "error" : ""}
         />
@@ -75,6 +76,7 @@ const RegistrationForm = () => {
           type="email"
           id="email"
           name="email"
+          value={formData.email}
           onChange={handleChange}
           className={emailError ? "error" : ""}
         />
@@ -86,6 +88,7 @@ const RegistrationForm = () => {
           type="password"
           id="password"
           name="password"
+          value={formData.password}
           onChange={handleChange}
           className={passwordError ? "error" : ""}
         />
